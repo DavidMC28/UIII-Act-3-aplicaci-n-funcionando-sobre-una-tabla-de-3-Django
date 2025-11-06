@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Bienvenido al Sistema de Gestión de Abarrotes</h1>
+    <p>Utiliza la barra de navegación para explorar las diferentes secciones.</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Gestión de Empleados</h5>
+                    <p class="card-text">Administra la información de tus empleados, incluyendo sus datos personales y fotos.</p>
+                    <a href="{% url 'ver_empleados' %}" class="btn btn-primary">Ver Empleados</a>
+                </div>
+            </div>
+        </div>
+        <!-- Puedes agregar más tarjetas para otras secciones -->
+    </div>
+{% endblock %}
